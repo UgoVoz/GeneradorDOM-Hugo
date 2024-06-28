@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <title>Generador de Dominios Web</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      #generate-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      #domain-output {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #domains-list {
+        margin-top: 20px;
+        text-align: left;
+        width: 50%;
+        margin: 20px auto;
+      }
+    </style>
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
+    <h1>Generador de Dominios Web</h1>
+    <button id="generate-btn">Generar Dominios</button>
+    <div id="domain-output"></div>
+    <ul id="domains-list"></ul>
+
+    <script src="app.js"></script>
   </body>
 </html>
